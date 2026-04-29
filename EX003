@@ -1,0 +1,9 @@
+using Bogus;
+
+var faker = new Bogus.Faker();
+string nome = faker.Name.FullName();
+string email = faker.Internet.Email();
+string adress = faker.Address.FullAddress();
+Console.WriteLine(nome);
+Console.WriteLine(email);
+Console.WriteLine(adress);
